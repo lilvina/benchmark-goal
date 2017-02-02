@@ -1,0 +1,29 @@
+{
+  "name": "benchmark-goal",
+  "version": "1.0.0",
+  "description": "Working on problem solving skills",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register ./spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilvina/benchmark-goal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilvina/benchmark-goal/issues"
+  },
+  "homepage": "https://github.com/lilvina/benchmark-goal#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-change": "^2.1.2",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0"
+  }
+}
