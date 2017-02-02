@@ -14,11 +14,10 @@ export const GuessNum = {
     rl.question('Please enter a number between 1 and 100', (guess) => {
       if(guess === randomNum) {
         point++
-      console.log(point)
-        return "You won the game!"
+
       } else {
         point--
-        return "Try again."
+
       }
       return point
     })
