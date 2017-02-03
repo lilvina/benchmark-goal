@@ -1,13 +1,17 @@
-// import chai, { expect } from 'chai'
-// import chaiChange from 'chai-change'
-// import {Vowel} from '../src/disemvowling'
+import chai, { expect} from 'chai'
+import chaiChange from 'chai-change'
+import Disemvoweling from '../src/disemvowling'
 
-// chai.use(chaiChange)
+chai.use(chaiChange)
 
-// describe('Vowel', () => {
-//   'use strict'
+describe('Disemvoweling', () => {
+  'use strict'
 
-//   it('exists', () => {
-//     expect(Vowel).to.be.a('function')
-//   })
-// })
+  it('exists', () => {
+    expect(Disemvoweling).to.be.a('function')
+  })
+
+  it('remove returns the disemvowled text with spaces removed', () => {
+    expect(Disemvoweling('hello world')).to.equal('hllwrld')
+  })
+})
