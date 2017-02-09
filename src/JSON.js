@@ -10,7 +10,7 @@ export default function findPath(obj, value) {
     console.log('======>', key)
     if(obj[key] == value) {
       result = `${key} -> `
-      result.push(value)
+      result.push(findPath(value))
     } else {
       result.push(value)
     }
