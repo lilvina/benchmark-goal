@@ -29,6 +29,6 @@ describe.only('findPath', () => {
       ]
     }
 
-    console.log(findPath(data))
+    console.log(findPath(data, '4chan'))
   })
 })
